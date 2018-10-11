@@ -9,7 +9,7 @@ public class ArrayListApp {
 		name.add("Hans");
 		name.add("Viggo");
 		name.add("Jens");
-		name.add("Børge");
+		name.add("BQrge");
 		name.add("Bent");
 		System.out.println(name);
 		name.add(1, "Jane");

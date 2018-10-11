@@ -10,14 +10,14 @@ public class StudentApp {
 		s2.addGrade(12);
 		s2.addGrade(10);
 
-		System.out.printf("%s har et gennemsnit på: %.1f\n", s2.getName(), s2.averageGrade());
-		System.out.printf("%s har et gennemsnit på: %.1f\n", s1.getName(), s1.averageGrade());
+		System.out.printf("%s got an average on: %.1f\n", s2.getName(), s2.averageGrade());
+		System.out.printf("%s got an average on: %.1f\n", s1.getName(), s1.averageGrade());
 
-		System.out.println("Karaktererne for " + s2.getName());
+		System.out.println("Grades for " + s2.getName());
 		for (int i = 0; i < s2.getNumberOfGrades(); i++) {
-			System.out.println(s2.getGrades()[i]);
-			System.out.println("Højeste karakter: " + s2.getMaxGrade());
-			System.out.println("Laveste karakter: " + s2.getMinGrade());
+			//System.out.println(s2.getGrades()[i]);
+			System.out.println("Highest grade: " + s2.getMaxGrade());
+			System.out.println("Lowest grade: " + s2.getMinGrade());
 		}
 	}
 

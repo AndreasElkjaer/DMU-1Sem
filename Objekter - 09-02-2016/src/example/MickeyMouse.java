@@ -7,7 +7,7 @@ import javafx.scene.paint.Color;
 import javafx.scene.shape.Circle;
 import javafx.stage.Stage;
 
-public class Shapes4c extends Application {
+public class MickeyMouse extends Application {
 	public static void main(String[] args) {
 		Application.launch(args);
 	}

@@ -15,15 +15,15 @@ public class Copier {
 
 	public void makeCopy(int copies) {
 		if (paper >= 501) {
-			System.out.println("Forhelvede, jeg kan ikke spise mere papir!");
+			System.out.println("Too much paper!");
 		} else if (paper < 1) {
-			System.out.println("Så giv mig da noget papir at printe på, IDIOT!");
+			System.out.println("Out of paper!");
 		} else if (paperStuck) {
-			System.out.println("Der er koks i maskineriet!");
+			System.out.println("ERROR: Paper is stuck!");
 		} else if (copies > paper) {
-			System.out.println("Ikke nok papir!");
+			System.out.println("Not enough paper!");
 		} else {
-			System.out.println("JEG ER FÆÆÆRDIG!!");
+			System.out.println("Printing Done!");
 			paper -= copies;
 		}
 	}

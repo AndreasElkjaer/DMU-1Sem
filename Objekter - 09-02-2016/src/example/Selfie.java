@@ -5,9 +5,10 @@ import javafx.scene.Scene;
 import javafx.scene.layout.Pane;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Circle;
+import javafx.scene.shape.Line;
 import javafx.stage.Stage;
 
-public class Shapes4b extends Application {
+public class Selfie extends Application {
 	public static void main(String[] args) {
 		Application.launch(args);
 	}
@@ -31,26 +32,22 @@ public class Shapes4b extends Application {
 
 	private void drawShapes(Pane pane) {
 		// Circle (X, Y, Radius)
-		Circle circle = new Circle(200, 200, 125);
-		Circle circle1 = new Circle(200, 200, 100);
-		Circle circle2 = new Circle(200, 200, 75);
-		Circle circle3 = new Circle(200, 200, 50);
-		Circle circle4 = new Circle(200, 200, 25);
+		// Line (StartX, StartY, EndX, EndY)
+		Circle circle = new Circle(200, 200, 100);
+		Circle eye1 = new Circle(175, 150, 10);
+		Circle eye2 = new Circle(225, 150, 10);
+		Line line = new Line(150, 250, 250, 250);
 		pane.getChildren().add(circle);
-		pane.getChildren().add(circle1);
-		pane.getChildren().add(circle2);
-		pane.getChildren().add(circle3);
-		pane.getChildren().add(circle4);
-		circle.setFill(Color.BLACK);
+		pane.getChildren().add(line);
+		pane.getChildren().add(eye1);
+		pane.getChildren().add(eye2);
+		circle.setFill(Color.WHITE);
 		circle.setStroke(Color.BLACK);
-		circle1.setFill(Color.WHITE);
-		circle1.setStroke(Color.BLACK);
-		circle2.setFill(Color.BLACK);
-		circle2.setStroke(Color.BLACK);
-		circle3.setFill(Color.WHITE);
-		circle3.setStroke(Color.BLACK);
-		circle4.setFill(Color.BLACK);
-		circle4.setStroke(Color.BLACK);
+		eye1.setFill(Color.WHITE);
+		eye1.setStroke(Color.BLACK);
+		eye2.setFill(Color.WHITE);
+		eye2.setStroke(Color.BLACK);
+		line.setFill(Color.BLACK);
 	}
 
 }

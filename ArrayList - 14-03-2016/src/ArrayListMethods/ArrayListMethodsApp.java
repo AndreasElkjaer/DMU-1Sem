@@ -14,13 +14,13 @@ public class ArrayListMethodsApp {
 		ArrayListMethods methods = new ArrayListMethods();
 
 		System.out.println(list);
-		System.out.println("Summen af tallene i listen (med for): " + methods.sumListeFor(list));
-		System.out.println("Summen af tallene i listen (med forEach): " + methods.sumListeForEach(list));
-		System.out.println("Indeks for det første lige tal: " + methods.hasEvenAtIndex(list));
+		System.out.println("Sum for the numbers in the list (for): " + methods.sumListeFor(list));
+		System.out.println("Sum for the numbers in the list (for each): " + methods.sumListeForEach(list));
+		System.out.println("Index for the first even number: " + methods.hasEvenAtIndex(list));
 		System.out.println(list);
-		System.out.println("Mindste Tal: " + methods.min(list));
-		System.out.println("Gennemsnit: " + methods.gennemsnit(list));
-		System.out.println("Antal Nuller: " + methods.antalNuller(list));
+		System.out.println("Lowest number: " + methods.min(list));
+		System.out.println("Average: " + methods.gennemsnit(list));
+		System.out.println("Amount of zeros: " + methods.antalNuller(list));
 		methods.erstatLigeMedNul(list);
 		System.out.println(list);
 	}

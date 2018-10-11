@@ -1,11 +1,11 @@
 package employee;
 
 /**
- * Klasse der beskriver en ansat.
+ * Class that describes an employee
  */
 public class Employee {
 	/**
-	 * Attributter der beskriver den ansattes tilstand
+	 * Attributes
 	 */
 	private String name;
 	private boolean trainee;
@@ -15,8 +15,8 @@ public class Employee {
 	private int monthlySalary;
 
 	/**
-	 * Constructor, når den ansatte oprettes, skal den have et navn. Ved
-	 * oprettelse er den ansatte en trainee
+	 * Constructor
+	 * When created the employee is a trainee
 	 */
 	// (Name, Surname, Age, Address, Salary)
 	public Employee(String inputName, String inputSurname, int inputAge, String inputAddress, int inputSalary) {
@@ -34,14 +34,14 @@ public class Employee {
 	}
 
 	/**
-	 * Den ansattes navn kan ændres ved kald af setName metoden
+	 * Change the employees name using setName
 	 */
 	public void setName(String inputName) {
 		this.name = inputName;
 	}
 
 	/**
-	 * Man kan få oplyst den ansattes navn, ved at kalde metoden getName
+	 * Get the employee name using getName
 	 */
 	public String getName() {
 		return this.name;
@@ -80,15 +80,14 @@ public class Employee {
 	}
 
 	/**
-	 * Den ansatte kan få ændret trainee status ved at kalde metoden setTrainess
+	 * change if the employee is a trainee using setTrainess
 	 */
 	public void setTrainee(boolean trainee) {
 		this.trainee = trainee;
 	}
 
 	/**
-	 * Man kan få oplyst den ansatte er trainess aktivitet, ved at kalde metoden
-	 * isTrainee
+	 * Check if the employee is a trainee using isTrainee
 	 */
 	public boolean isTrainee() {
 		return this.trainee;

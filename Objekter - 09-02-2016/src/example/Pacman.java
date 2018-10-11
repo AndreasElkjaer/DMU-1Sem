@@ -5,11 +5,10 @@ import javafx.scene.Scene;
 import javafx.scene.layout.Pane;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Circle;
-import javafx.scene.shape.Line;
-import javafx.scene.shape.Rectangle;
+import javafx.scene.shape.Polygon;
 import javafx.stage.Stage;
 
-public class Shapes2 extends Application {
+public class Pacman extends Application {
 	public static void main(String[] args) {
 		Application.launch(args);
 	}
@@ -32,23 +31,21 @@ public class Shapes2 extends Application {
 	}
 
 	private void drawShapes(Pane pane) {
-		// Circle (X, Y, Radius)
-		int moveRight = 100;
-		Color farve = Color.YELLOW;
+		// Polygon (X1, Y1, X2, Y2, X3, Y3)
 		// Line (StartX, StartY, EndX, EndY)
 		// Rectangle (x, y, width, height)
-		Circle circle = new Circle(moveRight, 200, 30);
-		Line line = new Line(moveRight, 50, 150, 10);
-		Rectangle rectangle = new Rectangle(moveRight, 75, 60, 60);
+		Polygon polygon = new Polygon(300, 200, 200, 200, 300, 300);
+		Circle circle = new Circle(200, 200, 100);
+		Circle circle2 = new Circle(200, 185, 5);
 		pane.getChildren().add(circle);
-		pane.getChildren().add(line);
-		pane.getChildren().add(rectangle);
-		circle.setFill(farve);
-		circle.setStroke(Color.BLACK);
-		line.setFill(farve);
-		line.setStroke(Color.BLACK);
-		rectangle.setFill(farve);
-		rectangle.setStroke(Color.BLACK);
+		pane.getChildren().add(polygon);
+		pane.getChildren().add(circle2);
+		circle.setFill(Color.ORANGE);
+		circle.setStroke(Color.ORANGE);
+		polygon.setFill(Color.WHITE);
+		polygon.setStroke(Color.WHITE);
+		circle2.setFill(Color.WHITE);
+		circle2.setStroke(Color.WHITE);
 	}
 
 }

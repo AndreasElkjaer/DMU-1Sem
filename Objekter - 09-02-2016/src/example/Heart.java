@@ -5,10 +5,10 @@ import javafx.scene.Scene;
 import javafx.scene.layout.Pane;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Circle;
-import javafx.scene.text.Text;
+import javafx.scene.shape.Polygon;
 import javafx.stage.Stage;
 
-public class MainApp extends Application {
+public class Heart extends Application {
 	public static void main(String[] args) {
 		Application.launch(args);
 	}
@@ -30,14 +30,22 @@ public class MainApp extends Application {
 		return pane;
 	}
 
-	// ------------------------------------------------------------------------
-
 	private void drawShapes(Pane pane) {
-		Circle circle = new Circle(70, 70, 150);
+		// Polygon (X1, Y1, X2, Y2, X3, Y3)
+		// Line (StartX, StartY, EndX, EndY)
+		// Rectangle (x, y, width, height)
+		Polygon polygon = new Polygon(130, 200, 200, 300, 270, 200);
+		Circle circle = new Circle(170, 185, 42);
+		Circle circle2 = new Circle(230, 185, 42);
+		pane.getChildren().add(polygon);
 		pane.getChildren().add(circle);
-		circle.setFill(Color.DARKGOLDENROD);
-		circle.setStroke(Color.AQUA);
-		Text text = new Text(100, 300, "Kristian");
-		pane.getChildren().add(text);
+		pane.getChildren().add(circle2);
+		polygon.setFill(Color.RED);
+		polygon.setStroke(Color.RED);
+		circle.setFill(Color.RED);
+		circle.setStroke(Color.RED);
+		circle2.setFill(Color.RED);
+		circle2.setStroke(Color.RED);
 	}
+
 }

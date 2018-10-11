@@ -9,7 +9,7 @@ import javafx.scene.shape.Line;
 import javafx.scene.shape.Rectangle;
 import javafx.stage.Stage;
 
-public class Shapes1 extends Application {
+public class Test2 extends Application {
 	public static void main(String[] args) {
 		Application.launch(args);
 	}
